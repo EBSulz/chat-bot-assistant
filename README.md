@@ -55,16 +55,13 @@ streamlit run app.py
 
 The app will open in your browser at `http://localhost:8501`
 
-## Deployment to Streamlit Cloud
+## Deployment to Azure Container Apps
 
-1. Push your code to a GitHub repository
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Sign in with your GitHub account
-4. Click "New app"
-5. Select your repository and branch
-6. Set the main file path to `app.py`
-7. Add your OpenAI API key in the Secrets section (see step 2 above)
-8. Click "Deploy"
+This app is configured to deploy to Azure Container Apps. The deployment includes:
+- `Dockerfile` for containerizing the app
+- `.dockerignore` to optimize the Docker build
+
+To deploy, build the Docker image and deploy it to Azure Container Apps using Azure CLI or the Azure Portal.
 
 ## How It Works
 
